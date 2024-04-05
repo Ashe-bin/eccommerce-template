@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopping Cart</title>
+
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="screen"
+      title="no title"
+      charset="utf-8"
+    />
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      charset="utf-8"
+    ></script>
+    <meta name="robots" content="noindex,follow" />
+    <script
+      src="https://kit.fontawesome.com/0e53af926d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="header-logo">
+          <a href="indext.html"><img src="images/logo.png" alt="" /></a>
+        </div>
+        <div class="header-list">
+          <nav class="header-list-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="header-list-icon">
+            <a href=""><i class="fa fa-bag-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <section class="cart-items" id="cart-items">
+        <div class="shopping-cart">
+          <!-- Title -->
+          <div class="title">Shopping Bag</div>
+
+          <!-- Product #1 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+              <img src="./images/item-1.png" alt="" />
+            </div>
+
+            <div class="description">
+              <span>Common Projects</span>
+              <span>Bball High</span>
+              <span>White</span>
+            </div>
+
+            <div class="quantity">
+              <button class="plus-btn" type="button" name="button">
+                <img src="./images/plus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1" />
+              <button class="minus-btn" type="button" name="button">
+                <img src="./images/minus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="total-price">$549</div>
+          </div>
+
+          <!-- Product #2 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+              <img src="./images/item-2.png" alt="" />
+            </div>
+
+            <div class="description">
+              <span>Maison Margiela</span>
+              <span>Future Sneakers</span>
+              <span>White</span>
+            </div>
+
+            <div class="quantity">
+              <button class="plus-btn" type="button" name="button">
+                <img src="./images/plus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1" />
+              <button class="minus-btn" type="button" name="button">
+                <img src="./images/minus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="total-price">$870</div>
+          </div>
+
+          <!-- Product #3 -->
+          <div class="item">
+            <div class="buttons">
+              <span class="delete-btn"></span>
+              <span class="like-btn"></span>
+            </div>
+
+            <div class="image">
+              <img src="./images/item-3.png" alt="" />
+            </div>
+
+            <div class="description">
+              <span>Our Legacy</span>
+              <span>Brushed Scarf</span>
+              <span>Brown</span>
+            </div>
+
+            <div class="quantity">
+              <button class="plus-btn" type="button" name="button">
+                <img src="./images/plus.svg" alt="" />
+              </button>
+              <input type="text" name="name" value="1" />
+              <button class="minus-btn" type="button" name="button">
+                <img src="images/minus.svg" alt="" />
+              </button>
+            </div>
+
+            <div class="total-price">$349</div>
+          </div>
+        </div>
+      </section>
+      <section id="cart-summary" class="cart-summary">
+        <div class="summary">
+          <a href="../checkout-page/checkout.html"
+            ><button id="checkout" class="btn-checkout">checkout</button></a
+          >
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div id="footer">
+        <div class="contact">
+          <a href="indext.html"><img src="images/logo.png" alt="" /></a>
+          <br />
+          <br />
+          <br />
+          <h3>Contact</h3>
+          <address>
+            <p><b>Address:</b> Wellington Road, Street 32. San Francisco</p>
+            <p><b>Phone:</b> Wellington Road, Street 32. San Francisco</p>
+            <p><b>Hours</b> 10:00 - 18:00. Mon - Sat</p>
+          </address>
+          <h3>Follow Us</h3>
+          <br />
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="about">
+          <h3>About</h3>
+          <br />
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="myaccount">
+          <h3>My account</h3>
+          <br />
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="install">
+          <h3>Payment methods</h3>
+          <br />
+          <!-- <p>From App Store or Google Play</p>
+          <div class="download">
+            <a href="#"><img src="images/pay/app.jpg" alt=""></a>
+            <a href="#"><img src="images/pay/play.jpg" alt=""></a>
+          </div> -->
+          <p>Secured Payment Gateways</p>
+          <img src="images/pay/pay.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      $(".minus-btn").on("click", function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest("div").find("input");
+        var value = parseInt($input.val());
+
+        if (value > 1) {
+          value = value - 1;
+        } else {
+          value = 0;
+        }
+
+        $input.val(value);
+      });
+
+      $(".plus-btn").on("click", function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest("div").find("input");
+        var value = parseInt($input.val());
+
+        if (value < 100) {
+          value = value + 1;
+        } else {
+          value = 100;
+        }
+
+        $input.val(value);
+      });
+
+      $(".like-btn").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
+    </script>
+  </body>
+</html>
