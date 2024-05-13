@@ -20,17 +20,46 @@
           <a href="indext.html"><img src="images/logo.png" alt="" /></a>
         </div>
         <div class="header-list">
-          <nav class="header-list-nav">
-            <ul>
+          <nav class="header-list-nav" id="nav-container">
+            <ul class="">
               <li><a class="active" href="index.html">Home</a></li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <li>
+                <div class="header-list-icon">
+                  <a href=""><i class="fa fa-bag-shopping"></i></a>
+                </div>
+              </li>
             </ul>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+              id="menu-bar"
+              class="menu-bar"
+              onclick="showSideBar()"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="27"
+              viewBox="0 -960 960 960"
+              width="27"
+              id="close-bar"
+              class="close-bar"
+              onclick="closeSideBar()"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
           </nav>
-          <div class="header-list-icon">
-            <a href=""><i class="fa fa-bag-shopping"></i></a>
-          </div>
         </div>
       </div>
     </header>
@@ -133,70 +162,14 @@
             <h4 class="price">$78</h4>
             <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
           </div>
-          <!-- <div class="product-cart">
-            <img src="images/products/f5.jpg" alt="product image" />
-            <span>adidas</span>
-            <h4>Cartoon Astronaut T-Shirts</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">$78</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div> -->
-          <!-- <div class="product-cart">
-            <img src="images/products/f6.jpg" alt="product image" />
-            <span>adidas</span>
-            <h4>Cartoon Astronaut T-Shirts</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">$78</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div> -->
-          <!-- <div class="product-cart">
-            <img src="images/products/f7.jpg" alt="product image" />
-            <span>adidas</span>
-            <h4>Cartoon Astronaut T-Shirts</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">$78</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div>
-          <div class="product-cart">
-            <img src="images/products/f8.jpg" alt="product image" />
-            <span>adidas</span>
-            <h4>Cartoon Astronaut T-Shirts</h4>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4 class="price">$78</h4>
-            <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-          </div> -->
         </div>
-        
-        <a href="../product-page/product.html"><button  class="more">Explore More</button></a>
+
+        <a href="../product-page/product.html"
+          ><button class="more">Explore More</button></a
+        >
       </section>
 
-      <section style="text-align: center;" >
-       
-      </section>
+      <section style="text-align: center"></section>
 
       <section class="product-section" class="section-p1">
         <h1>New Arrivals</h1>
@@ -323,11 +296,12 @@
             <h4>crazy deals</h4>
             <h2>buy 1 get 1 free</h2>
             <span>The best classic dress is on sale at coro</span>
+
             <button class="banner-btn">Learn More</button>
           </div>
           <div class="big-banners-2">
-            <h4>spring/summer</h4>
-            <h2>upcomming season</h2>
+            <h4>crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
             <span>The best classic dress is on sale at cara</span>
             <button class="banner-btn">Collection</button>
           </div>
@@ -343,7 +317,7 @@
           </div>
           <div class="small-banners-3">
             <h2>T-SHIRTS</h2>
-            <h5>New Trendy Prints</h4>
+            <h4>New Trendy Prints</h4>
           </div>
         </div>
       </section>
@@ -351,24 +325,31 @@
       <section id="newsletter">
         <div class="newsletter-text">
           <h3>Sign Up For Newsletters</h3>
-          <h5>get e-mail updates about out latest shop and <span>special offers</span></h5>
+          <h5>
+            get e-mail updates about out latest shop and
+            <span>special offers</span>
+          </h5>
         </div>
         <div class="form">
-          <input type="email" placeholder="Your email address" id="email-address-input">
+          <input
+            type="email"
+            placeholder="Your email address"
+            id="email-address-input"
+          />
           <button>Sign Up</button>
         </div>
       </section>
-
     </main>
 
     <!--footer section-->
 
-    <footer>
-      <div id="footer">
+    <footer id="footer">
+      <div class="footer-list">
         <div class="contact">
           <a href="indext.html"><img src="images/logo.png" alt="" /></a>
-          <br> <br>
-          <br> 
+          <br />
+          <br />
+          <br />
           <h3>Contact</h3>
           <address>
             <p><b>Address:</b> Wellington Road, Street 32. San Francisco</p>
@@ -376,7 +357,7 @@
             <p><b>Hours</b> 10:00 - 18:00. Mon - Sat</p>
           </address>
           <h3>Follow Us</h3>
-          <br> 
+          <br />
           <div class="socials">
             <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
@@ -387,16 +368,16 @@
         </div>
         <div class="about">
           <h3>About</h3>
-          <br> 
+          <br />
           <a href="#">About Us</a>
           <a href="#">Delivery Information</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>
           <a href="#">Contact Us</a>
         </div>
-        <div class="myaccount ">
+        <div class="myaccount">
           <h3>My account</h3>
-          <br> 
+          <br />
           <a href="#">Sign In</a>
           <a href="#">View Cart</a>
           <a href="#">My Wishlist</a>
@@ -405,19 +386,29 @@
         </div>
         <div class="install">
           <h3>Payment methods</h3>
-          <br> 
-          <!-- <p>From App Store or Google Play</p>
-          <div class="download">
-            <a href="#"><img src="images/pay/app.jpg" alt=""></a>
-            <a href="#"><img src="images/pay/play.jpg" alt=""></a>
-          </div> -->
+          <br />
+
           <p>Secured Payment Gateways</p>
-          <img src="images/pay/pay.png" alt="">
+          <img src="images/pay/pay.png" alt="" />
         </div>
-        
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      const menu = document.getElementById("menu-bar");
+      const close = document.getElementById("close-bar");
+      const navBar = document.getElementById("nav-container");
+
+      function showSideBar() {
+        navBar.classList.add("sidebar");
+        menu.classList.add("hide-menu");
+        close.classList.add("showclose");
+      }
+      function closeSideBar() {
+        navBar.classList.remove("sidebar");
+        menu.classList.remove("hide-menu");
+        close.classList.remove("showclose");
+      }
+    </script>
   </body>
 </html>
