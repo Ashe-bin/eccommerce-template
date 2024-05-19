@@ -77,6 +77,7 @@ a {
   left: 0;
   right: 0;
 }
+
 .more {
   background-color: #088178;
   padding: 1rem 1.5rem;
@@ -117,6 +118,22 @@ a {
 .header-list-nav ul a.active {
   color: #088178;
   content: "";
+}
+.cart-item-number {
+  color: #088178;
+  padding: 4;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -15px;
+  font-weight: bold;
+}
+.fa-bag-shopping {
+  font-size: 1.3rem;
+  color: #088178;
+}
+.header-list-icon {
+  position: relative;
 }
 .header-list-icon a {
   color: #1a1a1a;
@@ -325,7 +342,7 @@ a {
 }
 .product-section .product-cart .buy-icon {
   color: #088178;
-  background-color: #c7e9e75e;
+  background-color: #c7e9e7;
   padding: 15px;
   border-radius: 50px;
   position: absolute;
