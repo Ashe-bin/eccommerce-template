@@ -206,14 +206,22 @@ a {
 }
 .shopping-cart {
   width: 750px;
-  height: 423px;
   margin: 5rem auto 2.5rem;
   background: white;
   box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-
+  padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+.total-order-price {
+  color: #088178;
+  font-size: 1.3rem;
+  padding: 1rem 0.5rem;
+  line-height: 1.2;
+}
+.calculated-value {
+  margin-right: auto;
 }
 .main {
   background-color: rgba(0, 0, 0, 0.2);
@@ -292,7 +300,12 @@ a {
 .image {
   margin-right: 50px;
 }
-
+.item .image img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* This will ensure the image fits without cropping */
+  border: 1px solid #ccc; /* Example styling */
+}
 /* Product Description */
 .description {
   padding-top: 10px;
@@ -372,8 +385,11 @@ input:focus {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .image img {
-    width: 50%;
+  .item .image img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* This will ensure the image fits without cropping */
+    border: 1px solid #ccc; /* Example styling */
   }
   .image,
   .quantity,

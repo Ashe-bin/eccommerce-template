@@ -278,6 +278,9 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
 }
+.product-section {
+  margin-top: 6rem;
+}
 .product-section .pro-collection {
   display: flex;
   flex-wrap: wrap;
