@@ -63,6 +63,9 @@ a {
 }
 
 /* header styles */
+#shopping-car {
+  font-size: 2rem;
+}
 
 #header {
   display: flex;
@@ -108,7 +111,7 @@ a {
 }
 .header-list-nav ul a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.3s ease;
@@ -126,6 +129,16 @@ a {
 .header-list-icon a:hover,
 .header-list-nav ul a.active {
   color: #088178;
+}
+.cart-item-number {
+  color: #088178;
+  padding: 3;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -9px;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 .header-list-nav ul li a:hover::after,
 .header-list-nav ul li a.active::after {

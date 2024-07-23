@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+.section-p1 {
+  padding: 40px 0;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600px;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+button.normal:hover {
+  background-color: #088178;
+  color: #fff;
+}
+body {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* header styles */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e3e6f3;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.more {
+  background-color: #088178;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  border: 2px solid #088178;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin: 0.7rem auto;
+  border-radius: 5px;
+}
+.more:hover {
+  background-color: white;
+  color: #088178;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-list-nav ul {
+  display: flex;
+}
+.header-list-nav ul li {
+  list-style-type: none;
+  padding: 0 20px;
+  position: relative;
+}
+.header-list-nav ul a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+.header-list-nav ul a:hover,
+.header-list-nav ul a.active {
+  color: #088178;
+  content: "";
+}
+.cart-item-number {
+  color: #088178;
+  padding: 3;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -9px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.fa-bag-shopping {
+  font-size: 1.3rem;
+  color: #088178;
+}
+.header-list-icon {
+  position: relative;
+}
+.header-list-icon a {
+  color: #1a1a1a;
+  padding-left: 20px;
+  transition: 0.3s ease;
+}
+.header-list-icon a:hover,
+.header-list-nav ul a.active {
+  color: #088178;
+}
+.header-list-nav ul li a:hover::after,
+.header-list-nav ul li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+/* mobile nav */
+
+.header-list-nav > .menu-bar {
+  display: none;
+}
+.header-list-nav > .close-bar {
+  display: none;
+}
+.header-list-nav > .close-bar {
+  position: fixed;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .header-list-nav ul {
+    display: none;
+  }
+  .header-list-nav > .menu-bar {
+    display: block;
+  }
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar ul li {
+    list-style-type: none;
+    padding: 0 20px;
+    margin: 1rem auto;
+    position: relative;
+  }
+  .header-list-nav > .hide-menu {
+    display: none;
+  }
+  .header-list-nav > .showclose {
+    display: block;
+  }
+}
+
+/* main */
+.product-detail {
+  margin-top: 10rem;
+}
+
+/* main */
+.checkout-form {
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+form .form-input {
+  padding: 0.875rem 1rem;
+  background-color: white;
+  color: #333;
+  width: 100%;
+  font-size: 0.875rem;
+  border: 2px solid;
+  border-radius: 0.375rem;
+  outline: none;
+  margin: 1rem auto;
+  width: 80%;
+}
+.checkout-form-element {
+  text-align: center;
+}
+.checkout-address-form-input {
+  text-align: center;
+}
+.checkout-address-form-input input {
+  margin: 1rem auto;
+  width: 80%;
+}
+@media (min-width: 781px) {
+  form .form-input,
+  .checkout-address-form-input input {
+    width: 65%;
+  }
+}
+.checkout-proceed-btn {
+  text-align: center;
+  padding: 1rem 0;
+}
+.checkout-upper-container {
+  position: relative;
+  max-width: 65%;
+  margin: 0 auto;
+}
+.checkout-text {
+  text-align: center;
+  font-size: 2rem;
+}
