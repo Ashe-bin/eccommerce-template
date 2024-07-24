@@ -196,7 +196,10 @@ a {
     display: block;
   }
 }
-
+#form-input-error {
+  font-size: 1.2red;
+  color: red;
+}
 /* main */
 .product-detail {
   margin-top: 10rem;
