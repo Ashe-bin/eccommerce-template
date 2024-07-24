@@ -39,7 +39,7 @@ p {
   margin: 40px 0;
 }
 
-button.normal {
+button .normal {
   font-size: 14px;
   font-weight: 600px;
   padding: 15px 30px;
@@ -167,6 +167,39 @@ a {
   display: none;
 }
 
+.quantity_amount {
+  color: white;
+  font-size: 1.2rem;
+  background-color: #088178;
+  padding: 3px;
+}
+
+.quantity input {
+  color: white;
+  font-size: 1.2rem;
+}
+.display-container {
+  background-color: #4f8783;
+  padding: 7px 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.35rem;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+.product-name {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+.total-calculated {
+  background-color: #4f8783;
+  padding: 3px 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.35rem;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
 @media (max-width: 780px) {
   .header-list-nav ul {
     display: none;
@@ -193,7 +226,7 @@ a {
 }
 
 .summary {
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   width: 750px;
   padding: 1rem 0.75rem;
   background: #ffffff;
@@ -219,7 +252,7 @@ a {
 }
 .shopping-cart {
   width: 750px;
-  margin: 5rem auto 2.5rem;
+  margin: 5rem auto 1.5rem;
   background: white;
   box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
